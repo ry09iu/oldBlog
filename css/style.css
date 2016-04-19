@@ -52,7 +52,7 @@ a:focus {
       height: 0;
       overflow: hidden; }
     #header .site-name #logo {
-      font: bold 38px/1.12 "Times New Roman", Georgia, Times, sans-serif;
+      font: bold 32px/1.12 "Times New Roman", Georgia, Times, sans-serif;
       color: #555; }
       #header .site-name #logo span, #header .site-name #logo:hover {
         color: #777; }
@@ -159,7 +159,7 @@ a:focus {
     margin: 0;
     color: #555;
     text-align: left;
-    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
+    font: bold 20px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
     .post .post-title a {
       color: #555; }
   .post .post-meta {
@@ -209,7 +209,7 @@ a:focus {
       color: #444; }
   .post .post-content {
     clear: left;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.77;
     color: #444;
     padding-top: 15px;
@@ -329,7 +329,7 @@ a:focus {
 
 /* for archive page starts*/
 .post-archive {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 2;
   padding-bottom: .8em; }
   .post-archive h2 {
