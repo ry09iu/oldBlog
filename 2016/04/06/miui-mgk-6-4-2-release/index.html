@@ -15,7 +15,7 @@
 <meta property="og:description" content="MGK 开发版 6.4.2 已发布，欢迎大家下载刷入使用
 不了解MGK？点击这里解答你的疑惑 MGK 系列 ROM 简介
 本期版本号: 6.4.2">
-<meta property="og:updated_time" content="2016-04-24T08:10:17.648Z">
+<meta property="og:updated_time" content="2016-04-24T15:24:29.252Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MGK 开发版 6.4.2 发布">
 <meta name="twitter:description" content="MGK 开发版 6.4.2 已发布，欢迎大家下载刷入使用
@@ -74,39 +74,19 @@
             
             <div id="search-form-wrap">
 
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
 <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:www.r-rom.com ' + keyword;
+        return false;
+    });
+})(jQuery);
 </script>
-<script src="/js/insight.js"></script>
 
 </div>
         </div>
@@ -123,9 +103,19 @@
                 
                 <td>
                     
-    <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
-    </div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:www.r-rom.com ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
 
                 </td>
             </tr>
@@ -148,11 +138,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                7
+                8
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                7
+                4
                 <span>标签</span>
             </div>
         </div>
@@ -205,7 +195,7 @@
                     
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Android/">Android</a>, <a class="tag-link" href="/tags/MGK/">MGK</a>, <a class="tag-link" href="/tags/MIUI/">MIUI</a>, <a class="tag-link" href="/tags/ROM/">ROM</a>, <a class="tag-link" href="/tags/小米/">小米</a>
+        <a class="tag-link" href="/tags/MGK/">MGK</a>, <a class="tag-link" href="/tags/MIUI/">MIUI</a>, <a class="tag-link" href="/tags/ROM/">ROM</a>
     </div>
 
                 </div>
@@ -216,7 +206,7 @@
             
             <p>MGK 开发版 6.4.2 已发布，欢迎大家下载刷入使用</p>
 <p>不了解MGK？点击这里解答你的疑惑 <a href="http://www.r-rom.com/2016/04/06/about-mgk"><em>MGK 系列 ROM 简介</em></a></p>
-<p><strong>本期版本号:</strong> <font color="#458B00">6.4.2</font><br><a id="more"></a></p>
+<p><strong>本期版本号:</strong> <font color="#458B00"><strong>6.4.2</strong></font><br><a id="more"></a></p>
 <hr>
 <h2 id="官方更新日志"><a href="#官方更新日志" class="headerlink" title="官方更新日志:"></a><font size="4"><strong>官方更新日志:</strong></font></h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">【本周推荐】</span><br><span class="line">新增 日历支持从短信中导入信用卡账单并提醒</span><br><span class="line">新增 闹钟支持长按批量删除操作</span><br><span class="line">新增 小米钱包公交卡支持上海市和深圳市开卡，充值，支付（小米手机5）</span><br><span class="line">新增 直播<span class="keyword">APP</span>。与高颜值主播互动，福利抢不停</span><br><span class="line"></span><br><span class="line">【图库】</span><br><span class="line">新增 新增云照片回收站，不占云空间保留30天后自动删除</span><br><span class="line"></span><br><span class="line">【日历】</span><br><span class="line">新增 日历支持从短信中导入信用卡账单并提醒</span><br><span class="line"></span><br><span class="line">【时钟/计算器】</span><br><span class="line">新增 闹钟支持长按批量删除操作</span><br><span class="line"></span><br><span class="line">【直播】</span><br><span class="line">新增 实时直播。想播就播，播出你的精彩</span><br><span class="line">新增 达人云集。为你收集地球上的高颜值红人</span><br><span class="line">新增 趣味互动。点赞、礼物、私聊，多种互动方式</span><br><span class="line">新增 私密模式。跟亲爱的<span class="keyword">TA</span>说说悄悄话</span><br></pre></td></tr></table></figure>
 <h2 id="本期个人更新日志"><a href="#本期个人更新日志" class="headerlink" title="本期个人更新日志:"></a><font size="4"><strong>本期个人更新日志:</strong></font></h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">本期无个人更新内容，仅跟随MIUI官方内容同步更新</span><br></pre></td></tr></table></figure>
@@ -381,7 +371,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a><span class="category-list-count">4</span></li></ul></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a><span class="category-list-count">5</span></li></ul></li></ul></li></ul>
         </div>
     </div>
 
@@ -391,6 +381,15 @@
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2016/04/22/miui-mgk-6-4-22-release/" class="title">MGK 开发版 6.4.22 发布</a></p>
+                            <p class="item-date"><time datetime="2016-04-22T12:45:11.000Z" itemprop="datePublished">2016-04-22</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -428,15 +427,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
-                            <p class="item-title"><a href="/2016/04/10/miui-mgk-6-4-9-release/" class="title">MGK 开发版 6.4.9 发布</a></p>
-                            <p class="item-date"><time datetime="2016-04-10T12:38:21.000Z" itemprop="datePublished">2016-04-10</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -446,7 +436,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/IUNI/" style="font-size: 10px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 20px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 15px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a> <a href="/tags/U3/" style="font-size: 10px;">U3</a> <a href="/tags/小米/" style="font-size: 10px;">小米</a>
+            <a href="/tags/IUNI/" style="font-size: 10px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 20px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 15px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a>
         </div>
     </div>
 

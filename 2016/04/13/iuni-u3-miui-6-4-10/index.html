@@ -65,7 +65,7 @@ Ry09iu
 
 其他
 更多精彩及更新动态可关注本人新浪微博 @Ry09iu">
-<meta property="og:updated_time" content="2016-04-24T08:09:21.744Z">
+<meta property="og:updated_time" content="2016-04-24T15:23:20.316Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IUNI U3 MIUI7 开发版 6.4.13 发布">
 <meta name="twitter:description" content="IUNI U3 MIUI 7 开发版 6.4.13 已发布，欢迎大家下载刷入使用
@@ -149,39 +149,19 @@ Ry09iu
             
             <div id="search-form-wrap">
 
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
 <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:www.r-rom.com ' + keyword;
+        return false;
+    });
+})(jQuery);
 </script>
-<script src="/js/insight.js"></script>
 
 </div>
         </div>
@@ -198,9 +178,19 @@ Ry09iu
                 
                 <td>
                     
-    <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
-    </div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:www.r-rom.com ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
 
                 </td>
             </tr>
@@ -223,11 +213,11 @@ Ry09iu
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                7
+                8
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                7
+                4
                 <span>标签</span>
             </div>
         </div>
@@ -280,7 +270,7 @@ Ry09iu
                     
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Android/">Android</a>, <a class="tag-link" href="/tags/IUNI/">IUNI</a>, <a class="tag-link" href="/tags/MGK/">MGK</a>, <a class="tag-link" href="/tags/MIUI/">MIUI</a>, <a class="tag-link" href="/tags/ROM/">ROM</a>, <a class="tag-link" href="/tags/U3/">U3</a>
+        <a class="tag-link" href="/tags/IUNI/">IUNI</a>, <a class="tag-link" href="/tags/MGK/">MGK</a>, <a class="tag-link" href="/tags/MIUI/">MIUI</a>, <a class="tag-link" href="/tags/ROM/">ROM</a>
     </div>
 
                 </div>
@@ -476,7 +466,7 @@ Ry09iu
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a><span class="category-list-count">4</span></li></ul></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a><span class="category-list-count">5</span></li></ul></li></ul></li></ul>
         </div>
     </div>
 
@@ -486,6 +476,15 @@ Ry09iu
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2016/04/22/miui-mgk-6-4-22-release/" class="title">MGK 开发版 6.4.22 发布</a></p>
+                            <p class="item-date"><time datetime="2016-04-22T12:45:11.000Z" itemprop="datePublished">2016-04-22</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -523,15 +522,6 @@ Ry09iu
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
-                            <p class="item-title"><a href="/2016/04/10/miui-mgk-6-4-9-release/" class="title">MGK 开发版 6.4.9 发布</a></p>
-                            <p class="item-date"><time datetime="2016-04-10T12:38:21.000Z" itemprop="datePublished">2016-04-10</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -541,7 +531,7 @@ Ry09iu
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/IUNI/" style="font-size: 10px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 20px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 15px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a> <a href="/tags/U3/" style="font-size: 10px;">U3</a> <a href="/tags/小米/" style="font-size: 10px;">小米</a>
+            <a href="/tags/IUNI/" style="font-size: 10px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 20px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 15px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a>
         </div>
     </div>
 
