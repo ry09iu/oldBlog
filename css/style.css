@@ -118,7 +118,7 @@ body,
 body {
   color: #565a5f;
   background: #f5f8f9;
-  font: 14px "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+  font: 14px 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 a {
@@ -559,7 +559,7 @@ code {
   line-height: 1.6em;
   outline: none !important;
   background: none !important;
-  font: 14px "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+  font: 14px 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
   border: 1px solid #eceff2 !important;
 }
 .search-form-input:focus,
@@ -969,7 +969,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
-  font-family: "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+  font-family: 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -1169,7 +1169,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+  font: 14px 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
   padding: 0 15px;
   color: #565a5f;
   outline: none;
