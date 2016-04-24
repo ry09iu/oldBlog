@@ -118,7 +118,7 @@ body,
 body {
   color: #565a5f;
   background: #f5f8f9;
-  font: 13px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 14px "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 a {
@@ -456,9 +456,9 @@ code {
 }
 .nav-icon {
   text-align: center;
-  font-size: 13px;
-  width: 13px;
-  height: 13px;
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
   position: relative;
   cursor: pointer;
   height: 30px !important;
@@ -559,7 +559,7 @@ code {
   line-height: 1.6em;
   outline: none !important;
   background: none !important;
-  font: 13px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 14px "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
   border: 1px solid #eceff2 !important;
 }
 .search-form-input:focus,
@@ -666,7 +666,7 @@ code {
   font-weight: 600;
 }
 #profile .inner .base-info #location {
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 5px;
   color: #9a9ea3;
 }
@@ -712,11 +712,11 @@ code {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 19px;
+  font-size: 20px;
 }
 #profile .inner .article-info .article-info-block span {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 #profile .inner .article-info .article-info-block:first-child {
@@ -727,7 +727,7 @@ code {
 }
 #profile .inner .social-links > table td {
   text-align: center;
-  font-size: 23px;
+  font-size: 24px;
 }
 #profile .inner .social-links > table td a {
   position: relative;
@@ -967,9 +967,9 @@ a.article-title:hover {
   position: absolute;
 }
 .article-entry blockquote footer {
-  font-size: 13px;
+  font-size: 14px;
   margin: 1.6em 0;
-  font-family: "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -1169,7 +1169,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 14px "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
   padding: 0 15px;
   color: #565a5f;
   outline: none;
@@ -1482,7 +1482,7 @@ ol.toc {
 .layout-wrap-inner.list-categories ul li,
 .layout-wrap-inner.list-categories ul .category-list-child {
   padding: 10px 0;
-  font-size: 13px;
+  font-size: 14px;
   border-bottom: 1px solid border-color;
 }
 .layout-wrap-inner.list-categories ul li a,
@@ -1658,7 +1658,7 @@ ol.toc {
   padding: 20px 0;
   border-top: 1px solid #eceff2;
   color: #565a5f;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
 }
 #footer .outer {
@@ -1777,7 +1777,7 @@ ol.toc {
 .widget ul .category-list-child,
 .widget ol .category-list-child {
   padding: 10px 0;
-  font-size: 13px;
+  font-size: 14px;
   border-bottom: 1px solid border-color;
 }
 .widget ul li a,
@@ -2083,9 +2083,9 @@ ol.toc {
   display: block;
   overflow-x: auto;
   padding: 15px 20px;
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-  line-height: 20.8px;
+  line-height: 22.400000000000002px;
 }
 .highlight table {
   margin: 0;
