@@ -1,110 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang=zh>
 <head>
-  <meta charset="utf-8">
-  
-  <title>MGK 系列 ROM 简介 | Ry09iu的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="MGK系列ROM是本人基于最新MIUI7官方固件定制，加入了个人编写的MGK工具箱，拥有大家最常用也最实用的功能，希望大家喜欢">
+    <meta charset="utf-8">
+    
+    <title>MGK 系列 ROM 简介 | Ry09iu的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="MGK系列ROM是本人基于最新MIUI7官方固件定制，加入了个人编写的MGK工具箱，拥有大家最常用也最实用的功能，希望大家喜欢">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MGK 系列 ROM 简介">
 <meta property="og:url" content="http://ry09iu.github.io/2016/04/06/about-mgk/index.html">
 <meta property="og:site_name" content="Ry09iu的博客">
 <meta property="og:description" content="MGK系列ROM是本人基于最新MIUI7官方固件定制，加入了个人编写的MGK工具箱，拥有大家最常用也最实用的功能，希望大家喜欢">
 <meta property="og:image" content="http://www.r-rom.com/images/mgk/mgk_tools.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/mgk_tools_2.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/status_bar_settings.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/key_settings.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/mgk_mipop.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/xposed_install.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/system_audio_settings.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/advance_boot_menu.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/security_menu.png">
-<meta property="og:image" content="http://www.r-rom.com/images/mgk/about_mgk.png">
 <meta property="og:updated_time" content="2016-04-24T15:23:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MGK 系列 ROM 简介">
 <meta name="twitter:description" content="MGK系列ROM是本人基于最新MIUI7官方固件定制，加入了个人编写的MGK工具箱，拥有大家最常用也最实用的功能，希望大家喜欢">
 <meta name="twitter:image" content="http://www.r-rom.com/images/mgk/mgk_tools.png">
-  
-    <link rel="alternate" href="/atom.xml" title="Ry09iu的博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
 
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Ry09iu的博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Ry09iu ROM 下载、玩机技术交流</a>
-        </h2>
-      
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Ry09iu的博客</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">主页</a>
+                
+                    <a class="main-nav-link" href="/archives">文章</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:ry09iu.github.io ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+</div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://ry09iu.github.io"></form>
-      </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">主页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">文章</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:ry09iu.github.io ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+                </td>
+            </tr>
+        </table>
     </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-about-mgk" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/06/about-mgk/" class="article-date">
-  <time datetime="2016-04-06T06:22:59.000Z" itemprop="datePublished">2016-04-06</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/ROM/">ROM</a>►<a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a>►<a class="article-category-link" href="/categories/ROM/MIUI/MGK/">MGK</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">Ry09iu</h2>
+            <h3 id="title">Android Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Beijing, China</span>
+            <a id="follow" target="_blank" href="https://weibo.com/zuhdroid">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                15
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                9
+                <span>标签</span>
+            </div>
+        </div>
         
-  
-    <h1 class="article-title" itemprop="name">
-      MGK 系列 ROM 简介
-    </h1>
-  
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    <td><a href="https://github.com/ry09iu" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+                    
+                    <td><a href="https://weibo.com/zuhdroid" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
 
-      </header>
+            
+            <section id="main"><article id="post-about-mgk" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>MGK系列ROM是本人基于最新MIUI7官方固件定制，加入了个人编写的MGK工具箱，拥有大家最常用也最实用的功能，希望大家喜欢<br><a id="more"></a></p>
+        <h1 class="article-title" itemprop="name">
+            MGK 系列 ROM 简介
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/04/06/about-mgk/">
+            <time datetime="2016-04-06T06:22:59.000Z" itemprop="datePublished">2016-04-06</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/MGK/">MGK</a>
+    </div>
+
+                    
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/MGK/">MGK</a>, <a class="tag-link" href="/tags/ROM/">ROM</a>
+    </div>
+
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>MGK系列ROM是本人基于最新MIUI7官方固件定制，加入了个人编写的MGK工具箱，拥有大家最常用也最实用的功能，希望大家喜欢<br><a id="more"></a></p>
 <h2 id="MGK-系列ROM特性"><a href="#MGK-系列ROM特性" class="headerlink" title="MGK 系列ROM特性"></a><strong>MGK 系列ROM特性</strong></h2><figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">基于最新的MIUI7官方最新固件制作</span><br><span class="line">去除官方Recovery的刷入</span><br><span class="line">设置中加入自编译的MGK工具箱，更多高级功能等待你的体验</span><br><span class="line">破解系统签名验证，可自用安装任意签名的应用程序</span><br><span class="line">去除小米官方的系统验证，可自由删除系统内置应用如米市场、系统升级等程序，从此不再卡屏</span><br><span class="line">破解SD卡限制，第三方应用拥有外置SD卡读写权限</span><br><span class="line">提升桌面滑动流畅度，增强系统稳定性</span><br><span class="line">去除安全中心-ROOT管理中授权<span class="number">25</span>秒提示，缩短为<span class="number">2</span>秒，从此授权更快捷</span><br><span class="line">加入护目镜功能，进一步保护眼睛，支持自定义配色</span><br><span class="line">加入桌面布局自定义功能，支持<span class="number">4x5、4x6</span>、<span class="number">5x6、5x7</span>、<span class="number">6</span>x8等多种布局切换，无需重启返回桌面即可生效，不同的桌面排列请配合适当的DPI值，效果更佳</span><br><span class="line">加入Xposed自由安装及卸载功能，默认不启用Xposed模块，只需要在MGK工具箱中直接开启然后等待重启完成后即可享受Xposed框架，无需单刷Xposed卡刷包（原创功能）</span><br><span class="line">加入沉浸状态栏变色模块，第三方应用程序也可以沉浸，支持各种变色模式及自定义功能（需事先激活Xposed并启用模块）</span><br><span class="line">加入自定义DPI值功能，用户可自用编辑适合自己的DPI值，配合喜欢的桌面布局，让你爱不释手</span><br><span class="line">加入已统一界面为MIUI7风格的中兴屏幕助手以及来自小米官方的悬浮球，可根据自己喜好选择并进行设置</span><br><span class="line">加入下拉通知栏快捷开关布局，可设置<span class="number">3x3和3x4</span>两种布局，设置后需重启生效</span><br><span class="line">加入状态栏自定义功能（相关代码来自KangVIP）</span><br><span class="line">加入全新的状态栏网速设置，可设置仅下载速度显示，也可以设置双排即上传和下载网速同时显示</span><br><span class="line">加入状态栏时间位置调整，可设置为居左、居中、居右以及隐藏显示</span><br><span class="line">加入IOS风格状态栏切换，可设置为IOS风格状态栏以及MIUI原版布局风格</span><br><span class="line">加入状态栏时间显示精确到秒功能</span><br><span class="line">加入双击HOME键锁屏功能，支持自由开关（相关代码来自?靓??╯若）</span><br><span class="line">加入菜单键及返回键功能呼唤功能，用户可根据自己的需求进行设置，左手持机党不再痛苦</span><br><span class="line">加入充电及断开连接时声音开关功能</span><br><span class="line">加入截屏声音自定义开关功能，跟咔嚓说再见</span><br><span class="line">加入杜比音效，提升音效质感必备神器</span><br><span class="line">加入高级重启菜单，可选择重启手机、重启到Recovery模式以及重启到Fastboot模式</span><br><span class="line">加入Wifi密码查看功能，可查看已连接Wifi热点的密码</span><br><span class="line">加入手机测试模式入口，可查看手机网络信息、电池使用详情等</span><br><span class="line">加入手机工程模式入口（小白慎入）（MTK平台机型专有）</span><br></pre></td></tr></table></figure>
 <h2 id="重要提示"><a href="#重要提示" class="headerlink" title="重要提示"></a><strong>重要提示</strong></h2><p>MGK5.0/6.0系列在启用xposed框架后，如果出现主题应用不全的问题，请进入Xposed设置，勾选“禁用资源钩子”，然后重启重新应用主题即可</p>
 <h2 id="支持机型"><a href="#支持机型" class="headerlink" title="支持机型"></a><strong>支持机型</strong></h2><ul>
@@ -128,140 +224,280 @@
 <h2 id="截图展示"><a href="#截图展示" class="headerlink" title="截图展示"></a><strong>截图展示</strong></h2><p><img src="http://www.r-rom.com/images/mgk/mgk_tools.png" alt="MGK 主界面1"><br><img src="http://www.r-rom.com/images/mgk/mgk_tools_2.png" alt="MGK 主界面2"><br><img src="http://www.r-rom.com/images/mgk/status_bar_settings.png" alt="MGK 状态栏自定义"><br><img src="http://www.r-rom.com/images/mgk/key_settings.png" alt="MGK 按键设置"><br><img src="http://www.r-rom.com/images/mgk/mgk_mipop.png" alt="MGK 屏幕助手"><br><img src="http://www.r-rom.com/images/mgk/xposed_install.png" alt="MGK Xposed框架及模块"><br><img src="http://www.r-rom.com/images/mgk/system_audio_settings.png" alt="MGK 声音设置"><br><img src="http://www.r-rom.com/images/mgk/advance_boot_menu.png" alt="MGK 高级重启"><br><img src="http://www.r-rom.com/images/mgk/security_menu.png" alt="MGK 安全相关"><br><img src="http://www.r-rom.com/images/mgk/about_mgk.png" alt="MGK 关于"></p>
 <hr>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ry09iu.github.io/2016/04/06/about-mgk/" data-id="cjq4korcu0002nn0z4xval2b0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MGK/">MGK</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ROM/">ROM</a></li></ul>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
-    </footer>
-  </div>
-  
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+</div>
+
+            
     
+        <a href="http://ry09iu.github.io/2016/04/06/about-mgk/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://ry09iu.github.io/2016/04/06/about-mgk/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+        
 <nav id="article-nav">
-  
-    <a href="/2016/04/06/miui-mgk-6-4-2-release/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          MGK 开发版 6.4.2 发布
-        
-      </div>
-    </a>
-  
-  
+    
+        <a href="/2016/04/06/miui-mgk-6-4-2-release/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    MGK 开发版 6.4.2 发布
+                
+            </div>
+        </a>
+    
+    
 </nav>
 
-  
+
+    
 </article>
 
+
+    
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="2016/04/06/about-mgk/" data-title="MGK 系列 ROM 简介" data-url="http://ry09iu.github.io/2016/04/06/about-mgk/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
 </section>
+            
+                <aside id="sidebar">
+   
         
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/">Flyme</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/华为/">华为</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/一加/">一加</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/华为/">华为</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/">TOS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/华为/">华为</a></li></ul></li></ul></li></ul>
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/">Flyme</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/华为/">华为</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/一加/">一加</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/华为/">华为</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/">TOS</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/华为/">华为</a><span class="category-list-count">2</span></li></ul></li></ul></li></ul>
+        </div>
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Flyme/">Flyme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IUNI/">IUNI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MGK/">MGK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIUI/">MIUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ROM/">ROM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TOS/">TOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/一加/">一加</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/华为/">华为</a></li></ul>
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2018/05/19/miui-mgk-3.1-release/" class="title">小米6 MIUI 9 8.5.19 MGK 3.0定制版</a></p>
+                            <p class="item-date"><time datetime="2018-05-19T03:09:13.000Z" itemprop="datePublished">2018-05-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2016/11/29/huawei_miui8_release/" class="title">华为机型MIUI 8 更新日志及下载地址</a></p>
+                            <p class="item-date"><time datetime="2016-11-29T13:13:28.000Z" itemprop="datePublished">2016-11-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2016/10/29/oneplus3_miui8_release/" class="title">一加手机3/3T MIUI 8 更新日志及下载地址</a></p>
+                            <p class="item-date"><time datetime="2016-10-29T13:51:36.000Z" itemprop="datePublished">2016-10-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/Flyme/">Flyme</a></p>
+                            <p class="item-title"><a href="/2016/08/27/huawei_flyme5_release/" class="title">华为机型Flyme5历代版本更新日志及下载地址</a></p>
+                            <p class="item-date"><time datetime="2016-08-27T07:55:29.000Z" itemprop="datePublished">2016-08-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/TOS/">TOS</a></p>
+                            <p class="item-title"><a href="/2016/05/03/h30-tos-010503/" class="title">华为荣耀3C 4G全机型 TOS 第二版</a></p>
+                            <p class="item-date"><time datetime="2016-05-03T14:49:55.000Z" itemprop="datePublished">2016-05-03</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Android/" style="font-size: 12px;">Android</a> <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/IUNI/" style="font-size: 14px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 16px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 18px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a> <a href="/tags/TOS/" style="font-size: 12px;">TOS</a> <a href="/tags/一加/" style="font-size: 10px;">一加</a> <a href="/tags/华为/" style="font-size: 14px;">华为</a>
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Android/" style="font-size: 12px;">Android</a> <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/IUNI/" style="font-size: 14px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 16px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 18px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a> <a href="/tags/TOS/" style="font-size: 12px;">TOS</a> <a href="/tags/一加/" style="font-size: 10px;">一加</a> <a href="/tags/华为/" style="font-size: 14px;">华为</a>
+        </div>
     </div>
-  </div>
 
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a></li></ul>
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://weibo.com/zuhdroid">Ry09iu的新浪微博</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://bbs.zhiyoo.com/home.php?mod=space&uid=1933937&do=thread&view=me&from=space">智友社区作品展示</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.miui.com/home.php?mod=space&uid=47580963&do=thread&view=me&from=space">小米社区作品展示</a>
+                    </li>
+                
+            </ul>
+        </div>
     </div>
-  </div>
 
 
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/05/19/miui-mgk-3.1-release/">小米6 MIUI 9 8.5.19 MGK 3.0定制版</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/29/huawei_miui8_release/">华为机型MIUI 8 更新日志及下载地址</a>
-          </li>
-        
-          <li>
-            <a href="/2016/10/29/oneplus3_miui8_release/">一加手机3/3T MIUI 8 更新日志及下载地址</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/27/huawei_flyme5_release/">华为机型Flyme5历代版本更新日志及下载地址</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/03/h30-tos-010503/">华为荣耀3C 4G全机型 TOS 第二版</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
+    <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Ry09iu<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Ry09iu<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261343641'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261343641%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
     </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'r-rom-ds'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-  </div>
+    </div>
 </body>
 </html>

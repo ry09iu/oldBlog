@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang=zh>
 <head>
-  <meta charset="utf-8">
-  
-  <title>IUNI U3 MIUI7 开发版 6.4.27 发布 | Ry09iu的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="IUNI U3 MIUI 7 开发版 6.4.27 已发布，欢迎大家下载刷入使用
+    <meta charset="utf-8">
+    
+    <title>IUNI U3 MIUI7 开发版 6.4.27 发布 | Ry09iu的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="IUNI U3 MIUI 7 开发版 6.4.27 已发布，欢迎大家下载刷入使用
 
 
 
@@ -96,85 +96,190 @@ Ry09iu
 
 其他
 更多精彩及更新动态可关注本人新浪微博 @Ry09iu">
-  
-    <link rel="alternate" href="/atom.xml" title="Ry09iu的博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
 
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Ry09iu的博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">Ry09iu ROM 下载、玩机技术交流</a>
-        </h2>
-      
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Ry09iu的博客</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">主页</a>
+                
+                    <a class="main-nav-link" href="/archives">文章</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:ry09iu.github.io ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+</div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://ry09iu.github.io"></form>
-      </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">主页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">文章</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+    <button type="submit" class="search-form-submit"></button>
+</form>
+<script>
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:ry09iu.github.io ' + keyword;
+        return false;
+    });
+})(jQuery);
+</script>
+
+                </td>
+            </tr>
+        </table>
     </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-iuni-u3-miui-6-4-27" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/27/iuni-u3-miui-6-4-27/" class="article-date">
-  <time datetime="2016-04-27T15:48:58.000Z" itemprop="datePublished">2016-04-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/ROM/">ROM</a>►<a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a>►<a class="article-category-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">Ry09iu</h2>
+            <h3 id="title">Android Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Beijing, China</span>
+            <a id="follow" target="_blank" href="https://weibo.com/zuhdroid">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                15
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                9
+                <span>标签</span>
+            </div>
+        </div>
         
-  
-    <h1 class="article-title" itemprop="name">
-      IUNI U3 MIUI7 开发版 6.4.27 发布
-    </h1>
-  
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    <td><a href="https://github.com/ry09iu" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+                    
+                    <td><a href="https://weibo.com/zuhdroid" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
 
-      </header>
+            
+            <section id="main"><article id="post-iuni-u3-miui-6-4-27" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
+                
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>IUNI U3 MIUI 7 开发版 6.4.27 已发布，欢迎大家下载刷入使用</p>
+        <h1 class="article-title" itemprop="name">
+            IUNI U3 MIUI7 开发版 6.4.27 发布
+        </h1>
+    
+
+                <div class="article-meta">
+                    
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/04/27/iuni-u3-miui-6-4-27/">
+            <time datetime="2016-04-27T15:48:58.000Z" itemprop="datePublished">2016-04-27</time>
+        </a>
+    </div>
+
+
+                    
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a>
+    </div>
+
+                    
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/IUNI/">IUNI</a>, <a class="tag-link" href="/tags/MGK/">MGK</a>, <a class="tag-link" href="/tags/MIUI/">MIUI</a>, <a class="tag-link" href="/tags/ROM/">ROM</a>
+    </div>
+
+                </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>IUNI U3 MIUI 7 开发版 6.4.27 已发布，欢迎大家下载刷入使用</p>
 <table>
 <thead>
 <tr>
@@ -214,145 +319,285 @@ Ry09iu
 <h2 id="疑问解答"><a href="#疑问解答" class="headerlink" title="疑问解答"></a><strong>疑问解答</strong></h2><p><a href="http://www.r-rom.com/2016/04/18/iuni-u3-miui-info" target="_blank" rel="external"><em>点击这里查看部分常见问题及解答</em></a></p>
 <h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><strong>下载地址</strong></h2><p><a href="http://pan.baidu.com/s/1eSqFBzW" target="_blank" rel="external"><em>http://pan.baidu.com/s/1eSqFBzW</em></a></p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ry09iu.github.io/2016/04/27/iuni-u3-miui-6-4-27/" data-id="cjq4kordf000enn0zet5yl4gz" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IUNI/">IUNI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MGK/">MGK</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MIUI/">MIUI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ROM/">ROM</a></li></ul>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
-    </footer>
-  </div>
-  
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+</div>
+
+            
     
+        <a href="http://ry09iu.github.io/2016/04/27/iuni-u3-miui-6-4-27/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://ry09iu.github.io/2016/04/27/iuni-u3-miui-6-4-27/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+        
 <nav id="article-nav">
-  
-    <a href="/2016/05/03/h60-tos-010503/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          华为荣耀6移动版 TOS 特别定制版
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/04/22/miui-mgk-6-4-22-release/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">MGK 开发版 6.4.22 发布</div>
-    </a>
-  
+    
+        <a href="/2016/05/03/h60-tos-010503/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    华为荣耀6移动版 TOS 特别定制版
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2016/04/22/miui-mgk-6-4-22-release/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">MGK 开发版 6.4.22 发布</div>
+        </a>
+    
 </nav>
 
-  
+
+    
 </article>
 
+
+    
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="2016/04/27/iuni-u3-miui-6-4-27/" data-title="IUNI U3 MIUI7 开发版 6.4.27 发布" data-url="http://ry09iu.github.io/2016/04/27/iuni-u3-miui-6-4-27/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
 </section>
+            
+                <aside id="sidebar">
+   
         
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/">Flyme</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/华为/">华为</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/一加/">一加</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/华为/">华为</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/">TOS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/华为/">华为</a></li></ul></li></ul></li></ul>
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/">ROM</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/">Flyme</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/Flyme/华为/">华为</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/">MIUI</a><span class="category-list-count">12</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/IUNI/">IUNI</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/MGK/">MGK</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/一加/">一加</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/MIUI/华为/">华为</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/">TOS</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ROM/TOS/华为/">华为</a><span class="category-list-count">2</span></li></ul></li></ul></li></ul>
+        </div>
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Flyme/">Flyme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IUNI/">IUNI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MGK/">MGK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MIUI/">MIUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ROM/">ROM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TOS/">TOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/一加/">一加</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/华为/">华为</a></li></ul>
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2018/05/19/miui-mgk-3.1-release/" class="title">小米6 MIUI 9 8.5.19 MGK 3.0定制版</a></p>
+                            <p class="item-date"><time datetime="2018-05-19T03:09:13.000Z" itemprop="datePublished">2018-05-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2016/11/29/huawei_miui8_release/" class="title">华为机型MIUI 8 更新日志及下载地址</a></p>
+                            <p class="item-date"><time datetime="2016-11-29T13:13:28.000Z" itemprop="datePublished">2016-11-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/MIUI/">MIUI</a></p>
+                            <p class="item-title"><a href="/2016/10/29/oneplus3_miui8_release/" class="title">一加手机3/3T MIUI 8 更新日志及下载地址</a></p>
+                            <p class="item-date"><time datetime="2016-10-29T13:51:36.000Z" itemprop="datePublished">2016-10-29</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/Flyme/">Flyme</a></p>
+                            <p class="item-title"><a href="/2016/08/27/huawei_flyme5_release/" class="title">华为机型Flyme5历代版本更新日志及下载地址</a></p>
+                            <p class="item-date"><time datetime="2016-08-27T07:55:29.000Z" itemprop="datePublished">2016-08-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ROM/">ROM</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/ROM/TOS/">TOS</a></p>
+                            <p class="item-title"><a href="/2016/05/03/h30-tos-010503/" class="title">华为荣耀3C 4G全机型 TOS 第二版</a></p>
+                            <p class="item-date"><time datetime="2016-05-03T14:49:55.000Z" itemprop="datePublished">2016-05-03</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Android/" style="font-size: 12px;">Android</a> <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/IUNI/" style="font-size: 14px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 16px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 18px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a> <a href="/tags/TOS/" style="font-size: 12px;">TOS</a> <a href="/tags/一加/" style="font-size: 10px;">一加</a> <a href="/tags/华为/" style="font-size: 14px;">华为</a>
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Android/" style="font-size: 12px;">Android</a> <a href="/tags/Flyme/" style="font-size: 10px;">Flyme</a> <a href="/tags/IUNI/" style="font-size: 14px;">IUNI</a> <a href="/tags/MGK/" style="font-size: 16px;">MGK</a> <a href="/tags/MIUI/" style="font-size: 18px;">MIUI</a> <a href="/tags/ROM/" style="font-size: 20px;">ROM</a> <a href="/tags/TOS/" style="font-size: 12px;">TOS</a> <a href="/tags/一加/" style="font-size: 10px;">一加</a> <a href="/tags/华为/" style="font-size: 14px;">华为</a>
+        </div>
     </div>
-  </div>
 
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a></li></ul>
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://weibo.com/zuhdroid">Ry09iu的新浪微博</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://bbs.zhiyoo.com/home.php?mod=space&uid=1933937&do=thread&view=me&from=space">智友社区作品展示</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.miui.com/home.php?mod=space&uid=47580963&do=thread&view=me&from=space">小米社区作品展示</a>
+                    </li>
+                
+            </ul>
+        </div>
     </div>
-  </div>
 
 
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/05/19/miui-mgk-3.1-release/">小米6 MIUI 9 8.5.19 MGK 3.0定制版</a>
-          </li>
-        
-          <li>
-            <a href="/2016/11/29/huawei_miui8_release/">华为机型MIUI 8 更新日志及下载地址</a>
-          </li>
-        
-          <li>
-            <a href="/2016/10/29/oneplus3_miui8_release/">一加手机3/3T MIUI 8 更新日志及下载地址</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/27/huawei_flyme5_release/">华为机型Flyme5历代版本更新日志及下载地址</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/03/h30-tos-010503/">华为荣耀3C 4G全机型 TOS 第二版</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
+    <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Ry09iu<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Ry09iu<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261343641'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261343641%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
     </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'r-rom-ds'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-  </div>
+    </div>
 </body>
 </html>
